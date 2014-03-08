@@ -27,7 +27,7 @@ Informationsbedürfnissen, während die Bibliothek eher vermittelnd auftritt.
 
 **Inhaltsbasierte Empfehlungsdienste**
 
-versuchen relevante Dokumente mit herkömmlichen Ver­fahren des
+versuchen relevante Dokumente mit herkömmlichen Verfahren des
 Information-Retrieval (bekannt als "**Suchmaschinentechnologie**") zu
 bestimmen. Beispielsweise kann basierend auf Volltexten die Ähnlichkeit von
 Dokumenten berechnet werden, um ausgehend von einem Dokument verwandte Titel zu
@@ -97,21 +97,23 @@ Abb. 1: Bestandteile eines Empfehlungsdienstes
 
 Die Entwicklung von Verfahren für Empfehlungsdienste ist spätestens seit den
 1990er Jahren ein aktives Forschungs­gebiet. Neue Verfahren werden unter
-Anderem auf der jährlich durchgeführte Text Retrieval Conference (**TREC**)
-evaluiert;[^TREC] Bereich des Kollaborativen Filterns dient der mit
-1.000.000 \$ dotierte **Netflix Prize** als Messlatte.[^Netflix] Bei der
-Entwicklung eigener Empfehlungs­dienste sollte die aktuelle Forschungsliteratur
-konsultiert werden. Anstatt die Auswertung und Weiterverarbeitung der
-Datenrundlage zu Empfehlungen von Grund auf selber zu implementieren, kann
-diese Komponente auch in Auftrag gegeben oder als fertige Softwarebibliothek
-eingesetzte werden -- allerdings sollte beim Einsatz fremder Systeme zumindest
-klar sein, auf Grundlage welcher Daten und mit welchen konkreten Algorithmen
-Empfehlungen ermittelt werden. Für inhaltsbasierte Verfahren genügt oft bereits
-eine gezielte Indexierung mit einer leistungsfähigen Suchmaschine wie Apache
-Lucene[^Lucene] während für verhaltensbasierte Empfehlungen noch etwas mehr
-Eigenarbeit notwendig ist.[^Mahout]
+Anderem auf der jährlich durchgeführte Text Retrieval Conference
+(**TREC**)[^TREC] und auf der ACM Recommender Systems
+Konferenz[^<http://recsys.acm.org>, jährlich seit 2007] evaluiert; im Bereich
+des Kollaborativen Filterns diente lange der mit 1.000.000 \$ dotierte
+**Netflix Prize** als Messlatte.[^Netflix] Bei der Entwicklung eigener
+Empfehlungs­dienste sollte die aktuelle Forschungsliteratur konsultiert werden.
+Anstatt die Auswertung und Weiterverarbeitung der Datenrundlage zu Empfehlungen
+von Grund auf selber zu implementieren, kann diese Komponente auch in Auftrag
+gegeben oder als fertige Softwarebibliothek eingesetzte werden -- allerdings
+sollte beim Einsatz fremder Systeme zumindest klar sein, auf Grundlage welcher
+Daten und mit welchen konkreten Algorithmen Empfehlungen ermittelt werden. Für
+inhaltsbasierte Verfahren genügt oft bereits eine gezielte Indexierung mit
+einer leistungsfähigen Suchmaschine wie Apache Lucene[^Lucene] während für
+verhaltensbasierte Empfehlungen noch etwas mehr Eigenarbeit notwendig
+ist.[^Mahout]
 
-Viele Bibliothekssysteme bestehen noch immer aus mono­lithischen
+Viele Bibliothekssysteme bestehen noch immer aus monolithischen
 Softwareprodukten, die nur schwer erweitert oder an eigene Bedürfnisse
 angepasst werden können. So lassen sich Neuerungen und Änderungen nur schwer
 umsetzen. Eine Strategie gegen dieses Innovationshemmnis ist es, einzelne
@@ -135,7 +137,11 @@ wichtiger ist es, dass zum Experimentieren mit verschiedenen Diensten und
 Darstellungen geeignete Werkzeuge zur Verfügung stehen. Zeitgemäßen
 Weboberflächen sollten deshalb über eine Template-Syntax zur Trennung von
 Funktionalität und Layout verfügen, die zur Umgestaltung der Benutzeroberfläche
-lediglich einige Kenntnisse in HTML und CSS voraussetzt.
+lediglich einige Kenntnisse in HTML und CSS voraussetzt. Neben Anwendungen, die
+von Nutzern gezielt aufgesucht werden müssen, kann auch der Einsatz von
+Empfehlungsdiensten in Push-Medien (z.B. Mail, SMS oder Benachrichtigung durch
+mobile Apps) sinnvoll sein.
+
 
 # Beispiele
 
@@ -314,10 +320,11 @@ am ehesten relevant sein könnten.
 
 Eine Version dieses Artikels erschien in der Loseblattsammlung "Erfolgreiches
 Management von Bibliotheken und Informations­einrichtungen" im Verlag Dashöfer
-GmbH in Kapitel 9.4.4.
+GmbH in Kapitel 9.4.4 und ist als Open Access archiviert unter
+<http://hdl.handle.net/10760/13129>.
 
-Dieser Artikel steht wahlweise unter den Bedingungen der Creative Commons
-ShareAlike 3.0 und der GNU Free Documentation License zur Verfügung.
+Dieser Artikel steht unter den Bedingungen der Creative Commons ShareAlike 3.0
+License zur Verfügung.
 
 [^TREC]: Text REtrieval Conference (TREC) Home Page <http://trec.nist.gov/>.
 
